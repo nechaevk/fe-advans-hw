@@ -1,13 +1,14 @@
-let hurgada = 25;
-let sharm = 15;
-let taba = 6;
+const hurgada = 25;
+const sharm = 15;
+const taba = 6;
 let left;
 let temp;
 
 
-const numberOfPeople = prompt('Kоличество людей');
+let numberOfPeople = prompt('Kоличество людей');
+numberOfPeople = parseInt(numberOfPeople);
 
-if (numberOfPeople > 25 || numberOfPeople < 0) {
+if (numberOfPeople > 25 || numberOfPeople < 0 || isNaN(numberOfPeople) ) {
     alert('Мест нет');
 } else if (numberOfPeople > 0 && numberOfPeople <= 25) {
     temp = confirm('Для вас есть место в группе Хургада');
